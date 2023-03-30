@@ -4,7 +4,7 @@ def removeWatermark(input_fname: str, output_fname: str):
 
     with open(input_fname, "rb") as inputFile, open(output_fname, "wb") as outputFile:
 
-        reader = PdfFileReader(inputFile)
+        reader = PdfFileReader(inputFile) ## test
         writer = PdfFileWriter()
 
         for n in range(reader.numPages):
